@@ -1,52 +1,118 @@
-html {
-    font-size: 14px;
+html{
+    font-size:14px;
 }
 
-@media (min-width: 768px) {
-    html {
-        font-size: 16px;
-    }
+@media(min-width:768px){
+
+html{
+    font-size:16px;
+}
+
 }
 
 .blog-header{
-    margin-top: 7rem;
-    max-width: 700px;
+
+margin-top:7rem;
+max-width:700px;
+
 }
 
-@media (max-width: 768px){
-    .blog-header{
-        margin-top: 8rem;
-    }
+@media(max-width:768px){
+
+.blog-header{
+
+margin-top:8rem;
+
+}
+
 }
 
 .container{
-    max-width: 960px;
+
+max-width:960px;
+
 }
 
 .team{
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
-    margin-bottom: 2rem;
-}
 
+overflow-x:scroll;
+overflow-y:hidden;
+white-space:nowrap;
+margin-bottom:2rem;
 
-.card-deck .card{
-    min-width: 220px; 
 }
 
 .card-text{
-    padding-top: 1rem;
+
+padding-top:1rem;
+
 }
 
-.card-block{
-    min-height: 220px;
+.card{
+
+border-radius:15px;
+overflow:hidden;
+
+}
+
+.card-img-top{
+
+border-radius:10px;
+
 }
 
 .active{
-    border-bottom: 1px solid black;
+
+border-bottom:2px solid black;
+
 }
 
-a {
-    text-decoration: none;
+a{
+
+text-decoration:none;
+
+}
+
+.action-buttons{
+
+display:flex;
+justify-content:space-between;
+gap:10px;
+
+}
+
+.action-buttons button{
+
+flex:1;
+font-weight:600;
+
+}
+
+.comments{
+
+max-height:250px;
+overflow-y:auto;
+
+}
+
+.comment-box{
+
+animation:fade .3s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
 }
