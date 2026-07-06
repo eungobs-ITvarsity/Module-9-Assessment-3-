@@ -1,118 +1,136 @@
 html{
-    font-size:14px;
+font-size:14px;
 }
 
 @media(min-width:768px){
 
 html{
-    font-size:16px;
+font-size:16px;
 }
 
+}
+
+body{
+background:#f8f9fa;
 }
 
 .blog-header{
+margin-top:140px;
+margin-bottom:30px;
+max-width:900px;
+margin-left:auto;
+margin-right:auto;
+padding-left:20px;
+padding-right:20px;
+text-align:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
 
-margin-top:7rem;
+.blog-header h1{
+font-weight:700;
+margin-bottom:20px;
+}
+
+.blog-header p{
 max-width:700px;
-
+margin:auto;
+line-height:1.7;
 }
 
 @media(max-width:768px){
 
 .blog-header{
+margin-top:160px;
+padding-left:15px;
+padding-right:15px;
+}
 
-margin-top:8rem;
+.blog-header h1{
+font-size:2rem;
+}
 
+.blog-header p{
+font-size:1rem;
 }
 
 }
 
 .container{
-
 max-width:960px;
-
 }
 
 .team{
-
 overflow-x:scroll;
 overflow-y:hidden;
 white-space:nowrap;
 margin-bottom:2rem;
-
+padding-bottom:10px;
 }
 
-.card-text{
+.team img{
+transition:.3s;
+cursor:pointer;
+}
 
-padding-top:1rem;
-
+.team img:hover{
+transform:scale(1.08);
 }
 
 .card{
-
 border-radius:15px;
 overflow:hidden;
-
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+margin-bottom:25px;
 }
 
 .card-img-top{
-
 border-radius:10px;
+}
 
+.card-text{
+padding-top:1rem;
 }
 
 .active{
-
 border-bottom:2px solid black;
-
+font-weight:bold;
 }
 
 a{
-
 text-decoration:none;
-
 }
 
 .action-buttons{
-
 display:flex;
 justify-content:space-between;
 gap:10px;
-
 }
 
 .action-buttons button{
-
 flex:1;
 font-weight:600;
-
 }
 
 .comments{
-
 max-height:250px;
 overflow-y:auto;
-
 }
 
 .comment-box{
-
 animation:fade .3s;
-
 }
 
 @keyframes fade{
 
 from{
-
 opacity:0;
-
 }
 
 to{
-
 opacity:1;
-
 }
 
 }
